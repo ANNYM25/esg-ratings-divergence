@@ -1,0 +1,43 @@
+name: ci
+
+# The pipeline the README describes: typecheck, lint, tests with coverage, the
+# dataset calibration check, and the production build — on every push and PR.
+# The calibrate step fails the build if a hand-edit drifts the seed data's
+# correlation structure outside the published range.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Tests with coverage
+        run: npm run coverage
+
+      - name: Data calibration check
+        run: npm run calibrate
+
+      - name: Production build
+        run: npm run build

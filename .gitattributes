@@ -1,0 +1,12 @@
+# Normalize line endings across OSes.
+* text=auto eol=lf
+
+# Generated / vendored files — exclude from language stats and collapse in diffs.
+package-lock.json linguist-generated=true
+*.lock linguist-generated=true
+
+# Binary assets.
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary

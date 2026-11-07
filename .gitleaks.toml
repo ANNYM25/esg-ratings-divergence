@@ -1,0 +1,13 @@
+# gitleaks configuration — extends the built-in rules.
+# Docs: https://github.com/gitleaks/gitleaks
+title = "esg-ratings-divergence gitleaks config"
+
+[extend]
+useDefault = true          # keep all built-in secret-detection rules
+
+[allowlist]
+description = "Setup docs that are not secrets"
+# The env template ships with EMPTY key values as setup documentation.
+paths = [
+  '''\.env\.local\.example''',
+]

@@ -1,8 +1,19 @@
-# ESG Ratings Aggregator & Divergence Analyser
+<div align="center">
 
-Compare MSCI, Sustainalytics, LSEG and S&P Global ESG ratings side by side,
-quantify how far they disagree, and see which methodology differences drive the
-gap.
+# 📊 ESG Ratings Aggregator & Divergence Analyser
+
+### Compare MSCI, Sustainalytics, LSEG and S&P Global ESG ratings side by side — quantify how far they disagree, and see which methodology differences drive the gap.
+
+[![ci](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/ci.yml/badge.svg)](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/ci.yml)
+[![secret scan](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/gitleaks.yml)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
+[![React 19](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+*Research and education tool — not investment advice. All ratings are calibrated synthetic data.*
+
+</div>
 
 ```bash
 npm install
@@ -174,6 +185,39 @@ src/lib/validate.ts     Ingestion validator
 
 Data flows one way: `providers + data → normalise → divergence → explain → UI`.
 Nothing downstream writes back.
+
+```mermaid
+flowchart LR
+    D[("data<br/>companies + ratings")] --> N[normalise.ts]
+    P["providers.ts<br/>methodology KB"] --> N
+    N --> DV[divergence.ts]
+    DV --> EX["explain.ts<br/>rules engine"]
+    EX --> UI["Next.js App Router UI<br/>+ /api/export (PDF·CSV·JSON)"]
+
+    subgraph CORE["Deterministic core · src/lib (does all the maths)"]
+        P
+        N
+        DV
+        EX
+    end
+
+    subgraph AGENTS["Agent layer · src/agents (proposals only, no arithmetic)"]
+        O["orchestrator"] --> SRC["sourcing"]
+        O --> VER["verifier"]
+        O --> CON["controversy"]
+        O --> NAR["narrative (0 tools)"]
+        O --> WCH["methodology watcher"]
+        O --> QNA["research Q&A"]
+    end
+
+    AGENTS -. "call the core as tools" .-> CORE
+    AGENTS -. "proposals → human review" .-> UI
+
+    classDef core fill:#1f4e5f,stroke:#8fd3e8,color:#fff;
+    classDef agent fill:#5a3d2b,stroke:#e0b088,color:#fff;
+    class P,N,DV,EX core;
+    class O,SRC,VER,CON,NAR,WCH,QNA agent;
+```
 
 ### Three decisions that carry the credibility
 

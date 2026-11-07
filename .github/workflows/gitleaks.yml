@@ -1,0 +1,24 @@
+name: gitleaks
+
+# Secret scanning. This app uses model-provider API keys (Groq, Google, Cerebras)
+# that live only in a local, git-ignored .env.local — never in the repo. gitleaks
+# scans every push/PR against full history and fails if a key ever slips in.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
