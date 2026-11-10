@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esg-divergence"
+version = "1.0.0"
+description = "Quantify how far MSCI, Sustainalytics, LSEG and S&P Global ESG ratings disagree, and what it costs a portfolio."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Anny Mondal" }, { name = "Anish Chatterjee" }]
+keywords = ["esg", "sustainable-finance", "ratings", "divergence", "portfolio", "statistics", "msci", "sustainalytics"]
+dependencies = ["rich>=13", "pandas>=2.1", "matplotlib>=3.8", "numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.8", "jupyter>=1.0", "nbconvert>=7"]
+
+[project.scripts]
+esg-divergence = "esg_divergence.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["esg_divergence*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E731"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["esg_divergence"]
+
+[tool.ruff.lint.per-file-ignores]
+"tools/build_banner.py" = ["E501"]   # inline HTML/CSS
