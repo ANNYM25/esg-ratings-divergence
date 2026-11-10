@@ -1,0 +1,1802 @@
+[
+  {
+    "ticker": "XOM",
+    "provider": "msci",
+    "rawScore": 2.9,
+    "pillars": {
+      "environmental": 3,
+      "social": 3.8,
+      "governance": 2.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "XOM",
+    "provider": "sustainalytics",
+    "rawScore": 38.2,
+    "pillars": {
+      "environmental": 21.4,
+      "social": 16.2,
+      "governance": 12.1
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "XOM",
+    "provider": "lseg",
+    "rawScore": 66,
+    "pillars": {
+      "environmental": 70,
+      "social": 60,
+      "governance": 58
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "XOM",
+    "provider": "spcsa",
+    "rawScore": 61,
+    "pillars": {
+      "environmental": 59,
+      "social": 58,
+      "governance": 65
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CVX",
+    "provider": "msci",
+    "rawScore": 4.4,
+    "pillars": {
+      "environmental": 4.2,
+      "social": 4.8,
+      "governance": 4.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CVX",
+    "provider": "sustainalytics",
+    "rawScore": 35.1,
+    "pillars": {
+      "environmental": 18.9,
+      "social": 13.5,
+      "governance": 9.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CVX",
+    "provider": "lseg",
+    "rawScore": 74,
+    "pillars": {
+      "environmental": 78,
+      "social": 72,
+      "governance": 70
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CVX",
+    "provider": "spcsa",
+    "rawScore": 29,
+    "pillars": {
+      "environmental": 25,
+      "social": 35,
+      "governance": 24
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "SHEL",
+    "provider": "msci",
+    "rawScore": 7.5,
+    "pillars": {
+      "environmental": 7.3,
+      "social": 6.8,
+      "governance": 8.1
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "SHEL",
+    "provider": "sustainalytics",
+    "rawScore": 31.9,
+    "pillars": {
+      "environmental": 17.3,
+      "social": 12.6,
+      "governance": 10.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "SHEL",
+    "provider": "lseg",
+    "rawScore": 94,
+    "pillars": {
+      "environmental": 96,
+      "social": 93,
+      "governance": 87
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "SHEL",
+    "provider": "spcsa",
+    "rawScore": 55,
+    "pillars": {
+      "environmental": 55,
+      "social": 59,
+      "governance": 54
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BP",
+    "provider": "msci",
+    "rawScore": 6.1,
+    "pillars": {
+      "environmental": 5.5,
+      "social": 6.5,
+      "governance": 7.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BP",
+    "provider": "sustainalytics",
+    "rawScore": 30.8,
+    "pillars": {
+      "environmental": 16.5,
+      "social": 12.5,
+      "governance": 10.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BP",
+    "provider": "lseg",
+    "rawScore": 87,
+    "pillars": {
+      "environmental": 95,
+      "social": 84,
+      "governance": 81
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BP",
+    "provider": "spcsa",
+    "rawScore": 55,
+    "pillars": {
+      "environmental": 53,
+      "social": 57,
+      "governance": 57
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "COP",
+    "provider": "msci",
+    "rawScore": 5.9,
+    "pillars": {
+      "environmental": 5.1,
+      "social": 6,
+      "governance": 6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "COP",
+    "provider": "sustainalytics",
+    "rawScore": 34.4,
+    "pillars": {
+      "environmental": 20.2,
+      "social": 13.5,
+      "governance": 11.3
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "COP",
+    "provider": "lseg",
+    "rawScore": 60,
+    "pillars": {
+      "environmental": 65,
+      "social": 55,
+      "governance": 59
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "COP",
+    "provider": "spcsa",
+    "rawScore": 44,
+    "pillars": {
+      "environmental": 35,
+      "social": 42,
+      "governance": 42
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "OXY",
+    "provider": "msci",
+    "rawScore": 2.1,
+    "pillars": {
+      "environmental": 2.1,
+      "social": 2.9,
+      "governance": 1.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "OXY",
+    "provider": "sustainalytics",
+    "rawScore": 37.1,
+    "pillars": {
+      "environmental": 22.1,
+      "social": 15.2,
+      "governance": 13.5
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "OXY",
+    "provider": "lseg",
+    "rawScore": 56,
+    "pillars": {
+      "environmental": 62,
+      "social": 50,
+      "governance": 55
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "OXY",
+    "provider": "spcsa",
+    "rawScore": 52,
+    "pillars": {
+      "environmental": 47,
+      "social": 56,
+      "governance": 53
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "AAPL",
+    "provider": "msci",
+    "rawScore": 6,
+    "pillars": {
+      "environmental": 6.6,
+      "social": 5.5,
+      "governance": 5.5
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "AAPL",
+    "provider": "sustainalytics",
+    "rawScore": 16.6,
+    "pillars": {
+      "environmental": 5.4,
+      "social": 7.3,
+      "governance": 4.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "AAPL",
+    "provider": "lseg",
+    "rawScore": 78,
+    "pillars": {
+      "environmental": 86,
+      "social": 74,
+      "governance": 76
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "AAPL",
+    "provider": "spcsa",
+    "rawScore": 59,
+    "pillars": {
+      "environmental": 69,
+      "social": 58,
+      "governance": 58
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MSFT",
+    "provider": "msci",
+    "rawScore": 9.3,
+    "pillars": {
+      "environmental": 8.8,
+      "social": 8.1,
+      "governance": 8.7
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MSFT",
+    "provider": "sustainalytics",
+    "rawScore": 13.9,
+    "pillars": {
+      "environmental": 4.6,
+      "social": 5.8,
+      "governance": 4.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MSFT",
+    "provider": "lseg",
+    "rawScore": 93,
+    "pillars": {
+      "environmental": 96,
+      "social": 88,
+      "governance": 91
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MSFT",
+    "provider": "spcsa",
+    "rawScore": 81,
+    "pillars": {
+      "environmental": 81,
+      "social": 80,
+      "governance": 74
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NVDA",
+    "provider": "msci",
+    "rawScore": 6.1,
+    "pillars": {
+      "environmental": 6.9,
+      "social": 5.3,
+      "governance": 4.9
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NVDA",
+    "provider": "sustainalytics",
+    "rawScore": 15.1,
+    "pillars": {
+      "environmental": 6.4,
+      "social": 7.7,
+      "governance": 5.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NVDA",
+    "provider": "lseg",
+    "rawScore": 70,
+    "pillars": {
+      "environmental": 75,
+      "social": 69,
+      "governance": 68
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NVDA",
+    "provider": "spcsa",
+    "rawScore": 64,
+    "pillars": {
+      "environmental": 70,
+      "social": 67,
+      "governance": 56
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GOOGL",
+    "provider": "msci",
+    "rawScore": 6.7,
+    "pillars": {
+      "environmental": 9,
+      "social": 6.2,
+      "governance": 5.3
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GOOGL",
+    "provider": "sustainalytics",
+    "rawScore": 23.3,
+    "pillars": {
+      "environmental": 4.9,
+      "social": 10,
+      "governance": 6.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GOOGL",
+    "provider": "lseg",
+    "rawScore": 80,
+    "pillars": {
+      "environmental": 92,
+      "social": 75,
+      "governance": 73
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GOOGL",
+    "provider": "spcsa",
+    "rawScore": 46,
+    "pillars": {
+      "environmental": 54,
+      "social": 35,
+      "governance": 36
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "META",
+    "provider": "msci",
+    "rawScore": 3.4,
+    "pillars": {
+      "environmental": 7.5,
+      "social": 1.2,
+      "governance": 2.4
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "META",
+    "provider": "sustainalytics",
+    "rawScore": 31.2,
+    "pillars": {
+      "environmental": 7.1,
+      "social": 14.9,
+      "governance": 10.5
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "META",
+    "provider": "lseg",
+    "rawScore": 65,
+    "pillars": {
+      "environmental": 90,
+      "social": 58,
+      "governance": 53
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "META",
+    "provider": "spcsa",
+    "rawScore": 25,
+    "pillars": {
+      "environmental": 42,
+      "social": 12,
+      "governance": 18
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSM",
+    "provider": "msci",
+    "rawScore": 9.6,
+    "pillars": {
+      "environmental": 9.6,
+      "social": 9.6,
+      "governance": 9.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSM",
+    "provider": "sustainalytics",
+    "rawScore": 17.7,
+    "pillars": {
+      "environmental": 8.2,
+      "social": 5.6,
+      "governance": 4.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSM",
+    "provider": "lseg",
+    "rawScore": 72,
+    "pillars": {
+      "environmental": 67,
+      "social": 75,
+      "governance": 71
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSM",
+    "provider": "spcsa",
+    "rawScore": 75,
+    "pillars": {
+      "environmental": 72,
+      "social": 71,
+      "governance": 73
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSLA",
+    "provider": "msci",
+    "rawScore": 6,
+    "pillars": {
+      "environmental": 8.5,
+      "social": 4.3,
+      "governance": 2.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSLA",
+    "provider": "sustainalytics",
+    "rawScore": 25.5,
+    "pillars": {
+      "environmental": 6,
+      "social": 13,
+      "governance": 8.7
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSLA",
+    "provider": "lseg",
+    "rawScore": 57,
+    "pillars": {
+      "environmental": 70,
+      "social": 50,
+      "governance": 46
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "TSLA",
+    "provider": "spcsa",
+    "rawScore": 32,
+    "pillars": {
+      "environmental": 56,
+      "social": 23,
+      "governance": 22
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NKE",
+    "provider": "msci",
+    "rawScore": 6,
+    "pillars": {
+      "environmental": 6.2,
+      "social": 5.7,
+      "governance": 5.9
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NKE",
+    "provider": "sustainalytics",
+    "rawScore": 17,
+    "pillars": {
+      "environmental": 5.2,
+      "social": 8.5,
+      "governance": 4.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NKE",
+    "provider": "lseg",
+    "rawScore": 83,
+    "pillars": {
+      "environmental": 84,
+      "social": 82,
+      "governance": 80
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "NKE",
+    "provider": "spcsa",
+    "rawScore": 70,
+    "pillars": {
+      "environmental": 80,
+      "social": 74,
+      "governance": 68
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "KO",
+    "provider": "msci",
+    "rawScore": 5.1,
+    "pillars": {
+      "environmental": 3.6,
+      "social": 6,
+      "governance": 5.4
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "KO",
+    "provider": "sustainalytics",
+    "rawScore": 23.4,
+    "pillars": {
+      "environmental": 9.7,
+      "social": 9.3,
+      "governance": 4.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "KO",
+    "provider": "lseg",
+    "rawScore": 76,
+    "pillars": {
+      "environmental": 72,
+      "social": 79,
+      "governance": 77
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "KO",
+    "provider": "spcsa",
+    "rawScore": 44,
+    "pillars": {
+      "environmental": 45,
+      "social": 40,
+      "governance": 50
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "PG",
+    "provider": "msci",
+    "rawScore": 5.8,
+    "pillars": {
+      "environmental": 4.6,
+      "social": 5.8,
+      "governance": 5.9
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "PG",
+    "provider": "sustainalytics",
+    "rawScore": 21.8,
+    "pillars": {
+      "environmental": 9.6,
+      "social": 7.7,
+      "governance": 5.1
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "PG",
+    "provider": "lseg",
+    "rawScore": 86,
+    "pillars": {
+      "environmental": 84,
+      "social": 84,
+      "governance": 84
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "PG",
+    "provider": "spcsa",
+    "rawScore": 70,
+    "pillars": {
+      "environmental": 69,
+      "social": 68,
+      "governance": 79
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MCD",
+    "provider": "msci",
+    "rawScore": 5.4,
+    "pillars": {
+      "environmental": 4.5,
+      "social": 5.7,
+      "governance": 5.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MCD",
+    "provider": "sustainalytics",
+    "rawScore": 26.6,
+    "pillars": {
+      "environmental": 11.1,
+      "social": 10.5,
+      "governance": 5.7
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MCD",
+    "provider": "lseg",
+    "rawScore": 56,
+    "pillars": {
+      "environmental": 55,
+      "social": 53,
+      "governance": 58
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "MCD",
+    "provider": "spcsa",
+    "rawScore": 57,
+    "pillars": {
+      "environmental": 61,
+      "social": 56,
+      "governance": 67
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UL",
+    "provider": "msci",
+    "rawScore": 9.6,
+    "pillars": {
+      "environmental": 9.6,
+      "social": 9,
+      "governance": 9.3
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UL",
+    "provider": "sustainalytics",
+    "rawScore": 19.4,
+    "pillars": {
+      "environmental": 7.7,
+      "social": 6.3,
+      "governance": 4.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UL",
+    "provider": "lseg",
+    "rawScore": 88,
+    "pillars": {
+      "environmental": 86,
+      "social": 87,
+      "governance": 90
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UL",
+    "provider": "spcsa",
+    "rawScore": 73,
+    "pillars": {
+      "environmental": 74,
+      "social": 77,
+      "governance": 65
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "JPM",
+    "provider": "msci",
+    "rawScore": 4.8,
+    "pillars": {
+      "environmental": 5.6,
+      "social": 4.9,
+      "governance": 4.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "JPM",
+    "provider": "sustainalytics",
+    "rawScore": 23.4,
+    "pillars": {
+      "environmental": 4.8,
+      "social": 8.3,
+      "governance": 8.9
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "JPM",
+    "provider": "lseg",
+    "rawScore": 72,
+    "pillars": {
+      "environmental": 77,
+      "social": 73,
+      "governance": 72
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "JPM",
+    "provider": "spcsa",
+    "rawScore": 46,
+    "pillars": {
+      "environmental": 57,
+      "social": 50,
+      "governance": 51
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BAC",
+    "provider": "msci",
+    "rawScore": 8.2,
+    "pillars": {
+      "environmental": 8.2,
+      "social": 7.8,
+      "governance": 8.3
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BAC",
+    "provider": "sustainalytics",
+    "rawScore": 23.2,
+    "pillars": {
+      "environmental": 4.8,
+      "social": 9.8,
+      "governance": 8.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BAC",
+    "provider": "lseg",
+    "rawScore": 80,
+    "pillars": {
+      "environmental": 83,
+      "social": 79,
+      "governance": 73
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BAC",
+    "provider": "spcsa",
+    "rawScore": 68,
+    "pillars": {
+      "environmental": 77,
+      "social": 73,
+      "governance": 61
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GS",
+    "provider": "msci",
+    "rawScore": 6,
+    "pillars": {
+      "environmental": 7.3,
+      "social": 6.5,
+      "governance": 4.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GS",
+    "provider": "sustainalytics",
+    "rawScore": 27.3,
+    "pillars": {
+      "environmental": 4.8,
+      "social": 10.9,
+      "governance": 12.3
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GS",
+    "provider": "lseg",
+    "rawScore": 78,
+    "pillars": {
+      "environmental": 85,
+      "social": 80,
+      "governance": 76
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GS",
+    "provider": "spcsa",
+    "rawScore": 38,
+    "pillars": {
+      "environmental": 42,
+      "social": 40,
+      "governance": 28
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HSBC",
+    "provider": "msci",
+    "rawScore": 7.3,
+    "pillars": {
+      "environmental": 8.1,
+      "social": 7.1,
+      "governance": 6.9
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HSBC",
+    "provider": "sustainalytics",
+    "rawScore": 24,
+    "pillars": {
+      "environmental": 4.8,
+      "social": 10,
+      "governance": 9.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HSBC",
+    "provider": "lseg",
+    "rawScore": 80,
+    "pillars": {
+      "environmental": 86,
+      "social": 79,
+      "governance": 79
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HSBC",
+    "provider": "spcsa",
+    "rawScore": 60,
+    "pillars": {
+      "environmental": 68,
+      "social": 54,
+      "governance": 65
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BLK",
+    "provider": "msci",
+    "rawScore": 6.8,
+    "pillars": {
+      "environmental": 6.7,
+      "social": 6.4,
+      "governance": 6.5
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BLK",
+    "provider": "sustainalytics",
+    "rawScore": 20,
+    "pillars": {
+      "environmental": 4.8,
+      "social": 8.2,
+      "governance": 7.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BLK",
+    "provider": "lseg",
+    "rawScore": 76,
+    "pillars": {
+      "environmental": 81,
+      "social": 76,
+      "governance": 77
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BLK",
+    "provider": "spcsa",
+    "rawScore": 70,
+    "pillars": {
+      "environmental": 66,
+      "social": 68,
+      "governance": 74
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "V",
+    "provider": "msci",
+    "rawScore": 5.3,
+    "pillars": {
+      "environmental": 6.1,
+      "social": 4.6,
+      "governance": 4.9
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "V",
+    "provider": "sustainalytics",
+    "rawScore": 17.2,
+    "pillars": {
+      "environmental": 4.8,
+      "social": 8.3,
+      "governance": 8.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "V",
+    "provider": "lseg",
+    "rawScore": 64,
+    "pillars": {
+      "environmental": 69,
+      "social": 62,
+      "governance": 62
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "V",
+    "provider": "spcsa",
+    "rawScore": 41,
+    "pillars": {
+      "environmental": 45,
+      "social": 33,
+      "governance": 36
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BA",
+    "provider": "msci",
+    "rawScore": 3.2,
+    "pillars": {
+      "environmental": 6.1,
+      "social": 2.2,
+      "governance": 1.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BA",
+    "provider": "sustainalytics",
+    "rawScore": 33,
+    "pillars": {
+      "environmental": 4.8,
+      "social": 14.9,
+      "governance": 11.2
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BA",
+    "provider": "lseg",
+    "rawScore": 62,
+    "pillars": {
+      "environmental": 72,
+      "social": 56,
+      "governance": 54
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "BA",
+    "provider": "spcsa",
+    "rawScore": 22,
+    "pillars": {
+      "environmental": 36,
+      "social": 17,
+      "governance": 19
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CAT",
+    "provider": "msci",
+    "rawScore": 4,
+    "pillars": {
+      "environmental": 2.9,
+      "social": 3.6,
+      "governance": 3.7
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CAT",
+    "provider": "sustainalytics",
+    "rawScore": 26.2,
+    "pillars": {
+      "environmental": 10.5,
+      "social": 8.1,
+      "governance": 5.8
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CAT",
+    "provider": "lseg",
+    "rawScore": 76,
+    "pillars": {
+      "environmental": 76,
+      "social": 80,
+      "governance": 76
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "CAT",
+    "provider": "spcsa",
+    "rawScore": 51,
+    "pillars": {
+      "environmental": 52,
+      "social": 55,
+      "governance": 58
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GE",
+    "provider": "msci",
+    "rawScore": 7.7,
+    "pillars": {
+      "environmental": 7.5,
+      "social": 7.4,
+      "governance": 7.4
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GE",
+    "provider": "sustainalytics",
+    "rawScore": 26.7,
+    "pillars": {
+      "environmental": 11.5,
+      "social": 9.5,
+      "governance": 8.1
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GE",
+    "provider": "lseg",
+    "rawScore": 73,
+    "pillars": {
+      "environmental": 72,
+      "social": 75,
+      "governance": 73
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "GE",
+    "provider": "spcsa",
+    "rawScore": 64,
+    "pillars": {
+      "environmental": 64,
+      "social": 67,
+      "governance": 70
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HON",
+    "provider": "msci",
+    "rawScore": 5.5,
+    "pillars": {
+      "environmental": 5,
+      "social": 4.9,
+      "governance": 4.4
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HON",
+    "provider": "sustainalytics",
+    "rawScore": 21.9,
+    "pillars": {
+      "environmental": 8.7,
+      "social": 6.8,
+      "governance": 5.6
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HON",
+    "provider": "lseg",
+    "rawScore": 81,
+    "pillars": {
+      "environmental": 80,
+      "social": 79,
+      "governance": 78
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "HON",
+    "provider": "spcsa",
+    "rawScore": 69,
+    "pillars": {
+      "environmental": 72,
+      "social": 72,
+      "governance": 64
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UNP",
+    "provider": "msci",
+    "rawScore": 4.8,
+    "pillars": {
+      "environmental": 5.3,
+      "social": 3.7,
+      "governance": 5.3
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UNP",
+    "provider": "sustainalytics",
+    "rawScore": 26.1,
+    "pillars": {
+      "environmental": 10.5,
+      "social": 11.5,
+      "governance": 6.3
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UNP",
+    "provider": "lseg",
+    "rawScore": 64,
+    "pillars": {
+      "environmental": 70,
+      "social": 63,
+      "governance": 64
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "UNP",
+    "provider": "spcsa",
+    "rawScore": 29,
+    "pillars": {
+      "environmental": 36,
+      "social": 25,
+      "governance": 25
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "RTX",
+    "provider": "msci",
+    "rawScore": 6,
+    "pillars": {
+      "environmental": 7.5,
+      "social": 5.6,
+      "governance": 4.7
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "RTX",
+    "provider": "sustainalytics",
+    "rawScore": 30.1,
+    "pillars": {
+      "environmental": 9.1,
+      "social": 12.2,
+      "governance": 9.4
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "RTX",
+    "provider": "lseg",
+    "rawScore": 62,
+    "pillars": {
+      "environmental": 64,
+      "social": 61,
+      "governance": 62
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  },
+  {
+    "ticker": "RTX",
+    "provider": "spcsa",
+    "rawScore": 36,
+    "pillars": {
+      "environmental": 45,
+      "social": 28,
+      "governance": 40
+    },
+    "asOf": "2026-06-30",
+    "provenance": "illustrative",
+    "verified": false,
+    "retrievedAt": "2026-08-18",
+    "notes": "Illustrative placeholder — replace with a cited provider figure."
+  }
+]

@@ -10,6 +10,7 @@
     "report": "tsx scripts/report.ts",
     "check:providers": "tsx scripts/live-chain.mts",
     "calibrate": "tsx scripts/calibrate.mts",
+    "export:data": "tsx scripts/export-dataset.ts",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "test:watch": "vitest"

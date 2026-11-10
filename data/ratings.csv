@@ -1,0 +1,121 @@
+ticker,name,sector,provider,raw_score,raw_label,normalised,band_low,band_high,sector_percentile,universe_percentile,provenance,as_of
+XOM,"Exxon Mobil Corporation",energy,msci,2.9,"BB",29,28.6,42.9,25,5,illustrative,2026-06-30
+XOM,"Exxon Mobil Corporation",energy,sustainalytics,38.2,"38.2 · High",23.6,20,40,8.3,1.7,illustrative,2026-06-30
+XOM,"Exxon Mobil Corporation",energy,lseg,66,"66 · B",66,58.3,66.7,41.7,31.7,illustrative,2026-06-30
+XOM,"Exxon Mobil Corporation",energy,spcsa,61,"61/100",61,58.5,63.5,91.7,65,illustrative,2026-06-30
+CVX,"Chevron Corporation",energy,msci,4.4,"BBB",44,42.9,57.1,41.7,18.3,illustrative,2026-06-30
+CVX,"Chevron Corporation",energy,sustainalytics,35.1,"35.1 · High",29.8,20,40,41.7,8.3,illustrative,2026-06-30
+CVX,"Chevron Corporation",energy,lseg,74,"74 · B+",74,66.7,75,58.3,48.3,illustrative,2026-06-30
+CVX,"Chevron Corporation",energy,spcsa,29,"29/100",29,26.5,31.5,8.3,10,illustrative,2026-06-30
+SHEL,"Shell plc",energy,msci,7.5,"AA",75,71.4,85.7,91.7,81.7,illustrative,2026-06-30
+SHEL,"Shell plc",energy,sustainalytics,31.9,"31.9 · High",36.2,20,40,75,18.3,illustrative,2026-06-30
+SHEL,"Shell plc",energy,lseg,94,"94 · A+",94,91.7,100,91.7,98.3,illustrative,2026-06-30
+SHEL,"Shell plc",energy,spcsa,55,"55/100",55,52.5,57.5,66.7,50,illustrative,2026-06-30
+BP,"BP p.l.c.",energy,msci,6.1,"A",61,57.1,71.4,75,66.7,illustrative,2026-06-30
+BP,"BP p.l.c.",energy,sustainalytics,30.8,"30.8 · High",38.4,20,40,91.7,25,illustrative,2026-06-30
+BP,"BP p.l.c.",energy,lseg,87,"87 · A",87,83.3,91.7,75,88.3,illustrative,2026-06-30
+BP,"BP p.l.c.",energy,spcsa,55,"55/100",55,52.5,57.5,66.7,50,illustrative,2026-06-30
+COP,"ConocoPhillips",energy,msci,5.9,"A",59,57.1,71.4,58.3,45,illustrative,2026-06-30
+COP,"ConocoPhillips",energy,sustainalytics,34.4,"34.4 · High",31.2,20,40,58.3,11.7,illustrative,2026-06-30
+COP,"ConocoPhillips",energy,lseg,60,"60 · B",60,58.3,66.7,25,11.7,illustrative,2026-06-30
+COP,"ConocoPhillips",energy,spcsa,44,"44/100",44,41.5,46.5,25,30,illustrative,2026-06-30
+OXY,"Occidental Petroleum",energy,msci,2.1,"B",21,14.3,28.6,8.3,1.7,illustrative,2026-06-30
+OXY,"Occidental Petroleum",energy,sustainalytics,37.1,"37.1 · High",25.8,20,40,25,5,illustrative,2026-06-30
+OXY,"Occidental Petroleum",energy,lseg,56,"56 · B-",56,50,58.3,8.3,3.3,illustrative,2026-06-30
+OXY,"Occidental Petroleum",energy,spcsa,52,"52/100",52,49.5,54.5,41.7,45,illustrative,2026-06-30
+AAPL,"Apple Inc.",technology,msci,6,"A",60,57.1,71.4,25,55,illustrative,2026-06-30
+AAPL,"Apple Inc.",technology,sustainalytics,16.6,"16.6 · Low",66.8,60,80,58.3,91.7,illustrative,2026-06-30
+AAPL,"Apple Inc.",technology,lseg,78,"78 · A-",78,75,83.3,58.3,63.3,illustrative,2026-06-30
+AAPL,"Apple Inc.",technology,spcsa,59,"59/100",59,56.5,61.5,41.7,58.3,illustrative,2026-06-30
+MSFT,"Microsoft Corporation",technology,msci,9.3,"AAA",93,85.7,100,75,91.7,illustrative,2026-06-30
+MSFT,"Microsoft Corporation",technology,sustainalytics,13.9,"13.9 · Low",72.2,60,80,91.7,98.3,illustrative,2026-06-30
+MSFT,"Microsoft Corporation",technology,lseg,93,"93 · A+",93,91.7,100,91.7,95,illustrative,2026-06-30
+MSFT,"Microsoft Corporation",technology,spcsa,81,"81/100",81,78.5,83.5,91.7,98.3,illustrative,2026-06-30
+NVDA,"NVIDIA Corporation",technology,msci,6.1,"A",61,57.1,71.4,41.7,66.7,illustrative,2026-06-30
+NVDA,"NVIDIA Corporation",technology,sustainalytics,15.1,"15.1 · Low",69.8,60,80,75,95,illustrative,2026-06-30
+NVDA,"NVIDIA Corporation",technology,lseg,70,"70 · B+",70,66.7,75,25,35,illustrative,2026-06-30
+NVDA,"NVIDIA Corporation",technology,spcsa,64,"64/100",64,61.5,66.5,58.3,70,illustrative,2026-06-30
+GOOGL,"Alphabet Inc.",technology,msci,6.7,"A",67,57.1,71.4,58.3,71.7,illustrative,2026-06-30
+GOOGL,"Alphabet Inc.",technology,sustainalytics,23.3,"23.3 · Medium",53.4,40,60,25,61.7,illustrative,2026-06-30
+GOOGL,"Alphabet Inc.",technology,lseg,80,"80 · A-",80,75,83.3,75,71.7,illustrative,2026-06-30
+GOOGL,"Alphabet Inc.",technology,spcsa,46,"46/100",46,43.5,48.5,25,36.7,illustrative,2026-06-30
+META,"Meta Platforms, Inc.",technology,msci,3.4,"BB",34,28.6,42.9,8.3,11.7,illustrative,2026-06-30
+META,"Meta Platforms, Inc.",technology,sustainalytics,31.2,"31.2 · High",37.6,20,40,8.3,21.7,illustrative,2026-06-30
+META,"Meta Platforms, Inc.",technology,lseg,65,"65 · B",65,58.3,66.7,8.3,28.3,illustrative,2026-06-30
+META,"Meta Platforms, Inc.",technology,spcsa,25,"25/100",25,22.5,27.5,8.3,5,illustrative,2026-06-30
+TSM,"Taiwan Semiconductor Manufacturing",technology,msci,9.6,"AAA",96,85.7,100,91.7,96.7,illustrative,2026-06-30
+TSM,"Taiwan Semiconductor Manufacturing",technology,sustainalytics,17.7,"17.7 · Low",64.6,60,80,41.7,81.7,illustrative,2026-06-30
+TSM,"Taiwan Semiconductor Manufacturing",technology,lseg,72,"72 · B+",72,66.7,75,41.7,40,illustrative,2026-06-30
+TSM,"Taiwan Semiconductor Manufacturing",technology,spcsa,75,"75/100",75,72.5,77.5,75,95,illustrative,2026-06-30
+TSLA,"Tesla, Inc.",consumer,msci,6,"A",60,57.1,71.4,66.7,55,illustrative,2026-06-30
+TSLA,"Tesla, Inc.",consumer,sustainalytics,25.5,"25.5 · Medium",49,40,60,25,48.3,illustrative,2026-06-30
+TSLA,"Tesla, Inc.",consumer,lseg,57,"57 · B-",57,50,58.3,25,8.3,illustrative,2026-06-30
+TSLA,"Tesla, Inc.",consumer,spcsa,32,"32/100",32,29.5,34.5,8.3,15,illustrative,2026-06-30
+NKE,"NIKE, Inc.",consumer,msci,6,"A",60,57.1,71.4,66.7,55,illustrative,2026-06-30
+NKE,"NIKE, Inc.",consumer,sustainalytics,17,"17.0 · Low",66,60,80,91.7,88.3,illustrative,2026-06-30
+NKE,"NIKE, Inc.",consumer,lseg,83,"83 · A-",83,75,83.3,58.3,81.7,illustrative,2026-06-30
+NKE,"NIKE, Inc.",consumer,spcsa,70,"70/100",70,67.5,72.5,66.7,85,illustrative,2026-06-30
+KO,"The Coca-Cola Company",consumer,msci,5.1,"BBB",51,42.9,57.1,8.3,28.3,illustrative,2026-06-30
+KO,"The Coca-Cola Company",consumer,sustainalytics,23.4,"23.4 · Medium",53.2,40,60,41.7,56.7,illustrative,2026-06-30
+KO,"The Coca-Cola Company",consumer,lseg,76,"76 · A-",76,75,83.3,41.7,55,illustrative,2026-06-30
+KO,"The Coca-Cola Company",consumer,spcsa,44,"44/100",44,41.5,46.5,25,30,illustrative,2026-06-30
+PG,"Procter & Gamble",consumer,msci,5.8,"A",58,57.1,71.4,41.7,41.7,illustrative,2026-06-30
+PG,"Procter & Gamble",consumer,sustainalytics,21.8,"21.8 · Medium",56.4,40,60,58.3,71.7,illustrative,2026-06-30
+PG,"Procter & Gamble",consumer,lseg,86,"86 · A",86,83.3,91.7,75,85,illustrative,2026-06-30
+PG,"Procter & Gamble",consumer,spcsa,70,"70/100",70,67.5,72.5,66.7,85,illustrative,2026-06-30
+MCD,"McDonald's Corporation",consumer,msci,5.4,"BBB",54,42.9,57.1,25,35,illustrative,2026-06-30
+MCD,"McDonald's Corporation",consumer,sustainalytics,26.6,"26.6 · Medium",46.8,40,60,8.3,38.3,illustrative,2026-06-30
+MCD,"McDonald's Corporation",consumer,lseg,56,"56 · B-",56,50,58.3,8.3,3.3,illustrative,2026-06-30
+MCD,"McDonald's Corporation",consumer,spcsa,57,"57/100",57,54.5,59.5,41.7,55,illustrative,2026-06-30
+UL,"Unilever PLC",consumer,msci,9.6,"AAA",96,85.7,100,91.7,96.7,illustrative,2026-06-30
+UL,"Unilever PLC",consumer,sustainalytics,19.4,"19.4 · Low",61.2,60,80,75,78.3,illustrative,2026-06-30
+UL,"Unilever PLC",consumer,lseg,88,"88 · A",88,83.3,91.7,91.7,91.7,illustrative,2026-06-30
+UL,"Unilever PLC",consumer,spcsa,73,"73/100",73,70.5,75.5,91.7,91.7,illustrative,2026-06-30
+JPM,"JPMorgan Chase & Co.",financials,msci,4.8,"BBB",48,42.9,57.1,8.3,23.3,illustrative,2026-06-30
+JPM,"JPMorgan Chase & Co.",financials,sustainalytics,23.4,"23.4 · Medium",53.2,40,60,41.7,56.7,illustrative,2026-06-30
+JPM,"JPMorgan Chase & Co.",financials,lseg,72,"72 · B+",72,66.7,75,25,40,illustrative,2026-06-30
+JPM,"JPMorgan Chase & Co.",financials,spcsa,46,"46/100",46,43.5,48.5,41.7,36.7,illustrative,2026-06-30
+BAC,"Bank of America Corporation",financials,msci,8.2,"AA",82,71.4,85.7,91.7,88.3,illustrative,2026-06-30
+BAC,"Bank of America Corporation",financials,sustainalytics,23.2,"23.2 · Medium",53.6,40,60,58.3,65,illustrative,2026-06-30
+BAC,"Bank of America Corporation",financials,lseg,80,"80 · A-",80,75,83.3,83.3,71.7,illustrative,2026-06-30
+BAC,"Bank of America Corporation",financials,spcsa,68,"68/100",68,65.5,70.5,75,75,illustrative,2026-06-30
+GS,"The Goldman Sachs Group",financials,msci,6,"A",60,57.1,71.4,41.7,55,illustrative,2026-06-30
+GS,"The Goldman Sachs Group",financials,sustainalytics,27.3,"27.3 · Medium",45.4,40,60,8.3,31.7,illustrative,2026-06-30
+GS,"The Goldman Sachs Group",financials,lseg,78,"78 · A-",78,75,83.3,58.3,63.3,illustrative,2026-06-30
+GS,"The Goldman Sachs Group",financials,spcsa,38,"38/100",38,35.5,40.5,8.3,21.7,illustrative,2026-06-30
+HSBC,"HSBC Holdings plc",financials,msci,7.3,"AA",73,71.4,85.7,75,78.3,illustrative,2026-06-30
+HSBC,"HSBC Holdings plc",financials,sustainalytics,24,"24.0 · Medium",52,40,60,25,51.7,illustrative,2026-06-30
+HSBC,"HSBC Holdings plc",financials,lseg,80,"80 · A-",80,75,83.3,83.3,71.7,illustrative,2026-06-30
+HSBC,"HSBC Holdings plc",financials,spcsa,60,"60/100",60,57.5,62.5,58.3,61.7,illustrative,2026-06-30
+BLK,"BlackRock, Inc.",financials,msci,6.8,"A",68,57.1,71.4,58.3,75,illustrative,2026-06-30
+BLK,"BlackRock, Inc.",financials,sustainalytics,20,"20.0 · Medium",60,40,60,75,75,illustrative,2026-06-30
+BLK,"BlackRock, Inc.",financials,lseg,76,"76 · A-",76,75,83.3,41.7,55,illustrative,2026-06-30
+BLK,"BlackRock, Inc.",financials,spcsa,70,"70/100",70,67.5,72.5,91.7,85,illustrative,2026-06-30
+V,"Visa Inc.",financials,msci,5.3,"BBB",53,42.9,57.1,25,31.7,illustrative,2026-06-30
+V,"Visa Inc.",financials,sustainalytics,17.2,"17.2 · Low",65.6,60,80,91.7,85,illustrative,2026-06-30
+V,"Visa Inc.",financials,lseg,64,"64 · B",64,58.3,66.7,8.3,23.3,illustrative,2026-06-30
+V,"Visa Inc.",financials,spcsa,41,"41/100",41,38.5,43.5,25,25,illustrative,2026-06-30
+BA,"The Boeing Company",industrials,msci,3.2,"BB",32,28.6,42.9,8.3,8.3,illustrative,2026-06-30
+BA,"The Boeing Company",industrials,sustainalytics,33,"33.0 · High",34,20,40,8.3,15,illustrative,2026-06-30
+BA,"The Boeing Company",industrials,lseg,62,"62 · B",62,58.3,66.7,16.7,16.7,illustrative,2026-06-30
+BA,"The Boeing Company",industrials,spcsa,22,"22/100",22,19.5,24.5,8.3,1.7,illustrative,2026-06-30
+CAT,"Caterpillar Inc.",industrials,msci,4,"BB",40,28.6,42.9,25,15,illustrative,2026-06-30
+CAT,"Caterpillar Inc.",industrials,sustainalytics,26.2,"26.2 · Medium",47.6,40,60,58.3,41.7,illustrative,2026-06-30
+CAT,"Caterpillar Inc.",industrials,lseg,76,"76 · A-",76,75,83.3,75,55,illustrative,2026-06-30
+CAT,"Caterpillar Inc.",industrials,spcsa,51,"51/100",51,48.5,53.5,58.3,41.7,illustrative,2026-06-30
+GE,"GE Aerospace",industrials,msci,7.7,"AA",77,71.4,85.7,91.7,85,illustrative,2026-06-30
+GE,"GE Aerospace",industrials,sustainalytics,26.7,"26.7 · Medium",46.6,40,60,41.7,35,illustrative,2026-06-30
+GE,"GE Aerospace",industrials,lseg,73,"73 · B+",73,66.7,75,58.3,45,illustrative,2026-06-30
+GE,"GE Aerospace",industrials,spcsa,64,"64/100",64,61.5,66.5,75,70,illustrative,2026-06-30
+HON,"Honeywell International",industrials,msci,5.5,"BBB",55,42.9,57.1,58.3,38.3,illustrative,2026-06-30
+HON,"Honeywell International",industrials,sustainalytics,21.9,"21.9 · Medium",56.2,40,60,91.7,68.3,illustrative,2026-06-30
+HON,"Honeywell International",industrials,lseg,81,"81 · A-",81,75,83.3,91.7,78.3,illustrative,2026-06-30
+HON,"Honeywell International",industrials,spcsa,69,"69/100",69,66.5,71.5,91.7,78.3,illustrative,2026-06-30
+UNP,"Union Pacific Corporation",industrials,msci,4.8,"BBB",48,42.9,57.1,41.7,23.3,illustrative,2026-06-30
+UNP,"Union Pacific Corporation",industrials,sustainalytics,26.1,"26.1 · Medium",47.8,40,60,75,45,illustrative,2026-06-30
+UNP,"Union Pacific Corporation",industrials,lseg,64,"64 · B",64,58.3,66.7,41.7,23.3,illustrative,2026-06-30
+UNP,"Union Pacific Corporation",industrials,spcsa,29,"29/100",29,26.5,31.5,25,10,illustrative,2026-06-30
+RTX,"RTX Corporation",industrials,msci,6,"A",60,57.1,71.4,75,55,illustrative,2026-06-30
+RTX,"RTX Corporation",industrials,sustainalytics,30.1,"30.1 · High",39.8,20,40,25,28.3,illustrative,2026-06-30
+RTX,"RTX Corporation",industrials,lseg,62,"62 · B",62,58.3,66.7,16.7,16.7,illustrative,2026-06-30
+RTX,"RTX Corporation",industrials,spcsa,36,"36/100",36,33.5,38.5,41.7,18.3,illustrative,2026-06-30
