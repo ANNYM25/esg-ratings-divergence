@@ -20,7 +20,12 @@ npx tsc --noEmit       # typecheck
 npm run coverage       # tests + coverage thresholds
 npm run calibrate      # dataset correlation structure stays in range
 npm run build          # production build
+npm run export:data    # if you touched src/lib or src/data: refresh data/ for the Python port
+cd python && pytest    # Python engine + TypeScript parity
 ```
+
+If you change a formula in `src/lib`, change it in `python/esg_divergence` too. The parity tests will tell you if
+the two have drifted.
 
 ## Ground rules
 

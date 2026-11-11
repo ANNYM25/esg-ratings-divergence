@@ -2,7 +2,23 @@
 
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
-## [Unreleased]
+## [1.0.0] · 2026-11-11
+
+### Added
+- **Python research engine** (`python/esg_divergence`): normalisation, divergence, Spearman, bootstrap,
+  permutation null, screening, turnover cost and predictor tests, with pandas views and a `rich` CLI
+- **Cross-language parity**: `npm run export:data` writes `data/reference.json` from the TypeScript engine;
+  42 pytest tests assert the Python port reproduces it exactly (seeded PRNG, JS rounding and summation included)
+- `data/ratings.csv` and JSON exports of the full dataset
+- Executed research notebook (`python/notebooks/divergence_walkthrough.ipynb`)
+- Seven publication figures (`docs/figures`) and full-app screenshots (`docs/screenshots`), both regenerable from Python
+- Python job in CI; CI also fails if `data/` drifts from the TypeScript source
+
+### Changed
+- README rebuilt around the findings, with figures, screenshots and the Python engine
+- Neutral wording for the optional LLM narrative layer
+
+## [0.2.0]
 
 ### Added
 - **CI pipeline** (`.github/workflows/ci.yml`) — typecheck, lint, tests with

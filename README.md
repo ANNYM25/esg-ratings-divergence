@@ -1,203 +1,244 @@
 <div align="center">
 
-# 📊 ESG Ratings Aggregator & Divergence Analyser
+<img src="docs/figures/banner.png" alt="ESG Ratings Divergence: four raters, one universe, 48% disagreement on what's investable" width="100%" />
 
-### Compare MSCI, Sustainalytics, LSEG and S&P Global ESG ratings side by side — quantify how far they disagree, and see which methodology differences drive the gap.
+<h3>MSCI, Sustainalytics, LSEG and S&P Global rate the same companies.<br/>This project measures how far they disagree, why, and what it costs a portfolio.</h3>
 
-[![ci](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/ci.yml/badge.svg)](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/ci.yml)
-[![secret scan](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/gitleaks.yml)
-[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
-[![React 19](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=black)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+<p>
+<a href="https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/ci.yml/badge.svg"></a>
+<a href="https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/gitleaks.yml"><img alt="secret scan" src="https://github.com/ANNYM25/esg-ratings-divergence/actions/workflows/gitleaks.yml/badge.svg"></a>
+<img alt="Python" src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white">
+<img alt="pandas" src="https://img.shields.io/badge/pandas-research%20engine-150458?logo=pandas&logoColor=white">
+<img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-black?logo=next.js">
+<img alt="Tests" src="https://img.shields.io/badge/tests-104%20TS%20%2B%2042%20Python-22c55e">
+<a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-16a34a"></a>
+<a href="https://github.com/ANNYM25/esg-ratings-divergence/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/ANNYM25/esg-ratings-divergence?style=social"></a>
+</p>
 
-*Research and education tool — not investment advice. All ratings are calibrated synthetic data.*
+<p>
+<a href="#-findings"><b>Findings</b></a> ·
+<a href="#%EF%B8%8F-the-app"><b>The app</b></a> ·
+<a href="#-python-research-engine"><b>Python engine</b></a> ·
+<a href="#-quick-start"><b>Quick start</b></a> ·
+<a href="#%EF%B8%8F-architecture"><b>Architecture</b></a> ·
+<a href="python/notebooks/divergence_walkthrough.ipynb"><b>Notebook</b></a>
+</p>
+
+<sub><b>Research and education tool. Not investment advice.</b> All ratings are <a href="#%EF%B8%8F-data-status--read-this-first">calibrated synthetic data</a>.</sub>
 
 </div>
 
+---
+
+## 📌 Findings
+
+Divergence is usually reported as a score. This project reports what it **costs**.
+
+> **Across four standard institutional mandates applied to the same 30 companies, 48% of holdings change
+> eligibility depending on which ESG vendor is licensed.** On a top-quartile mandate two vendors' portfolios
+> overlap by as little as **38%**: switching provider turns over most of the book for reasons unrelated to the
+> companies. That is roughly **20bp of one-off transaction cost** on the worst mandate, against 2.8bp on the best.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 1 · The disagreement is real, not noise
+
+In the permutation null, each rater's scores are shuffled independently. That destroys shared signal but keeps
+each rater's own distribution. Under it, independent raters would produce a mean divergence of **60.7**
+(95% range 55.3–65.7). The observed **42.9** sits far below that (**p < 0.002**). The raters do measure a shared
+construct; what survives is the part that moves portfolios.
+
+</td>
+<td width="50%"><img src="docs/figures/permutation_null.png" alt="Permutation null distribution vs observed divergence"/></td>
+</tr>
+<tr>
+<td valign="top">
+
+### 2 · It is predictable
+
+Three of four pre-stated hypotheses hold. **Carbon intensity** is the strongest driver: high-carbon companies
+diverge **15.1 points** more than medium-carbon ones (**Cohen's d 1.34**, non-overlapping intervals). Absolute
+and industry-relative benchmarks treat sector exposure in opposite directions, so divergence is forecastable
+from company characteristics before any rating is consulted.
+
+</td>
+<td><img src="docs/figures/predictors.png" alt="Mean divergence by company characteristic"/></td>
+</tr>
+<tr>
+<td valign="top">
+
+### 3 · Screen design matters more than vendor choice
+
+Rank-based exclusions leave **27%** of holdings contested; absolute score floors leave **63%**. Raters disagree
+about *levels* far more than about *ordering*. A mandate reading "score of 50 or above" inherits its vendor's
+calibration; one reading "bottom decile excluded" does not.
+
+</td>
+<td><img src="docs/figures/screening_impact.png" alt="Contested holdings and switching cost by mandate"/></td>
+</tr>
+</table>
+
+Every figure carries a bootstrap confidence interval and survives a threshold sweep from the top 10% to the top 50%.
+
+<details>
+<summary><b>More figures</b>: divergence ranking · rank correlations · threshold sensitivity · rater scatter</summary>
+<br/>
+
+| | |
+|---|---|
+| ![Divergence ranking](docs/figures/divergence_ranking.png) | ![Correlation heatmap](docs/figures/correlation_heatmap.png) |
+| ![Threshold sensitivity](docs/figures/threshold_sensitivity.png) | ![MSCI vs Sustainalytics](docs/figures/rater_scatter.png) |
+
+All figures are generated by `python -m esg_divergence.figures`.
+
+</details>
+
+## 🖥️ The app
+
+A Next.js research workspace: every number on screen is computed by a deterministic, tested engine, and every
+disagreement is traced back to the methodology attribute that caused it.
+
+<table>
+<tr>
+<td width="50%"><a href="docs/screenshots/01_overview.png"><img src="docs/screenshots/crops/01_overview.png" alt="Dashboard"/></a><br/><b>Dashboard</b>: the executive summary, divergence league table, sector view and rank correlations.</td>
+<td width="50%"><a href="docs/screenshots/02_company_tsla.png"><img src="docs/screenshots/crops/02_company_tsla.png" alt="Company page"/></a><br/><b>Company deep dive</b>: native ratings, uncertainty bands, and the six reasons the raters disagree.</td>
+</tr>
+<tr>
+<td><a href="docs/screenshots/05_screening.png"><img src="docs/screenshots/crops/05_screening.png" alt="Screening impact"/></a><br/><b>Screening impact</b>: four mandates × four vendors, contested holdings and switching cost.</td>
+<td><a href="docs/screenshots/06_research.png"><img src="docs/screenshots/crops/06_research.png" alt="Research findings"/></a><br/><b>Research findings</b>: the permutation null, bootstrap intervals and predictor tests.</td>
+</tr>
+<tr>
+<td><a href="docs/screenshots/08_providers.png"><img src="docs/screenshots/crops/08_providers.png" alt="Providers"/></a><br/><b>Provider methodologies</b>: framing, benchmark, materiality, disclosure and controversy handling.</td>
+<td><a href="docs/screenshots/10_agents.png"><img src="docs/screenshots/crops/10_agents.png" alt="Agents"/></a><br/><b>Agent layer</b>: six agents that fetch, verify and narrate, but never do arithmetic.</td>
+</tr>
+</table>
+
+<details>
+<summary><b>More screens</b>: sign-in · Exxon deep dive · compare · sectors · methodology · print report</summary>
+<br/>
+
+| | |
+|---|---|
+| ![Sign-in](docs/screenshots/crops/00_login.png) | ![Exxon Mobil](docs/screenshots/crops/03_company_xom.png) |
+| ![Compare](docs/screenshots/crops/04_compare.png) | ![Sectors](docs/screenshots/crops/07_sectors.png) |
+| ![Methodology](docs/screenshots/crops/09_methodology.png) | ![Report](docs/screenshots/crops/11_report.png) |
+
+Click any gallery image above for the full-page capture. Screens are regenerated by `python/tools/capture_screenshots.py`.
+
+</details>
+
+## 🐍 Python research engine
+
+[`python/esg_divergence`](python/esg_divergence) is a full Python implementation of the analytics in `src/lib`:
+normalisation, divergence, Spearman correlations, bootstrap intervals, the permutation null, screening impact,
+turnover cost and the predictor tests.
+
+**It is tested to match the TypeScript engine to the last decimal.** `npm run export:data` writes the dataset and
+every headline result computed by TypeScript to [`data/reference.json`](data/reference.json), and
+[`python/tests/test_parity.py`](python/tests/test_parity.py) asserts that Python reproduces all of it: the
+universe table, correlation matrix, every bootstrap interval, the permutation p-value, all four screens, turnover
+and the predictor effect sizes. The port reimplements the seeded mulberry32 PRNG, JavaScript's half-up rounding
+and naive float summation, so even the resampled statistics agree.
+
+```bash
+cd python
+python -m venv .venv && source .venv/bin/activate
+pip install -e ".[dev]"
+
+python -m esg_divergence                  # headline findings in the terminal
+python -m esg_divergence company TSLA     # one company, four raters
+python -m esg_divergence.figures          # regenerate every figure in docs/figures
+pytest                                    # 42 tests, incl. TypeScript parity
+jupyter lab notebooks/                    # the research walkthrough
+```
+
+<img src="docs/figures/cli_report.png" alt="python -m esg_divergence output" width="100%" />
+
+```python
+from esg_divergence import universe_stats, permutation_null, screening_headline
+from esg_divergence.frame import divergence_frame
+
+universe_stats()["meanDivergence"]          # 42.9
+permutation_null().null_mean                # 60.7
+screening_headline()["meanContestedShare"]  # 48
+
+df = divergence_frame()                     # pandas: one row per company, with attributes
+df.groupby("carbon")["score"].mean()        # the strongest predictor, in one line
+```
+
+The data also ships as a tidy CSV, [`data/ratings.csv`](data/ratings.csv), for Excel, R or anything else.
+
+## 🚀 Quick start
+
 ```bash
 npm install
-npm run dev        # http://localhost:3000
-npm test           # 104 tests
-npm run coverage   # with coverage thresholds
-npm run calibrate  # verify the dataset's correlation structure
+npm run dev          # http://localhost:3000
+npm test             # 104 tests
+npm run coverage     # with coverage thresholds
+npm run calibrate    # verify the dataset's correlation structure
+npm run export:data  # refresh data/*.json + the Python parity reference
 npm run build
 ```
 
-**Sign in with the demo credentials shown on the login screen** (click the dashed
-box to fill them):
+**Sign in with the demo credentials shown on the login screen** (click the dashed box to fill them):
 
 ```
 analyst@xyz-capital.com · esg2026
 ```
 
-This sign-in is presentation only — see `src/lib/session.ts`. There is no account
-system, no password hashing and no server-side verification, because nothing
-behind it is private. It exists to frame the tool for its audience and to give
-the demo a defined entry point.
-
----
-
-## Findings
-
-Divergence is usually reported as a score. This tool reports what it costs.
-
-**Across four standard institutional mandates applied to the same 30 companies,
-48% of holdings change eligibility depending on which vendor is licensed.** On a
-top-quartile mandate two vendors' portfolios overlap by as little as 38% —
-switching provider turns over most of the book for reasons unrelated to the
-companies. Expressed the way a portfolio manager reads it, that is roughly
-**20bp of one-off transaction cost** on the worst mandate against 2.8bp on the
-best.
-
-Three results support it:
-
-**1. The disagreement is real, not noise.** Tested against a permutation null in
-which each rater's scores are shuffled independently — destroying shared signal
-while preserving each rater's own distribution. Independent raters would produce
-mean divergence of 60.7 (95% 55.3–65.7); the observed 42.9 sits far below that,
-p < 0.002 over 500 permutations. The raters do measure a shared construct. What
-survives is the part that moves portfolios.
-
-**2. It is predictable.** Three of four pre-stated hypotheses hold. Carbon
-intensity is the strongest driver: high-carbon companies diverge 15.1 points
-more than medium-carbon ones (Cohen's d 1.34, non-overlapping intervals),
-because absolute and industry-relative benchmarks treat sector exposure in
-opposite directions. Divergence concentrates exactly where methodology choices
-have room to bite, which means it is forecastable from company characteristics
-before any rating is consulted.
-
-**3. Screen design matters more than vendor choice.** Rank-based exclusions
-leave 27% of holdings contested; absolute score floors leave 63%. Raters
-disagree about *levels* far more than about *ordering*. A mandate reading "score
-of 50 or above" is inheriting its vendor's calibration; one reading "bottom
-decile excluded" is not.
-
-All figures carry bootstrap confidence intervals and survive a threshold
-sensitivity sweep from the top 10% to the top 50%.
-
-**Research and education tool. Not investment advice.**
+The sign-in is presentation only (see `src/lib/session.ts`): there is no account system and nothing behind it is
+private. It frames the tool for its audience and gives the demo a defined entry point.
 
 ---
 
 ## ⚠️ Data status — read this first
 
-**Every rating in this build is a calibrated synthetic value, not a published
-vendor score.** MSCI, Sustainalytics and LSEG ratings are proprietary and
-licensed. There is no lawful automated route to them: no free API exists, Yahoo
-Finance's ESG endpoint (the usual free proxy) was Sustainalytics-derived and has
-been unreliable since ~2023, and the providers' terms prohibit scraping their
-public lookup pages.
+**Every rating in this build is a calibrated synthetic value, not a published vendor score.** MSCI,
+Sustainalytics and LSEG ratings are proprietary and licensed. There is no lawful automated route to them: no
+free API exists, Yahoo Finance's ESG endpoint (the usual free proxy) was Sustainalytics-derived and has been
+unreliable since ~2023, and the providers' terms prohibit scraping their public lookup pages.
 
-Rather than fabricate a pipeline that cannot exist, the values were constructed
-in two documented, reproducible stages:
+Rather than fabricate a pipeline that cannot exist, the values were constructed in two documented, reproducible stages:
 
-1. **Structure.** Written by hand to reproduce the divergence patterns the
-   literature records — industry-relative raters scoring oil majors respectably,
-   disclosure-weighted raters rewarding heavy reporters, absolute risk raters
-   penalising high-exposure sectors.
-2. **Calibration.** `scripts/calibrate.mts` injects deterministic idiosyncratic
-   variance until all six pairwise rank correlations fall inside the 0.38–0.71
-   range Berg, Kölbel & Rigobon (2022) report — subject to constraints that each
-   rater's view of each *sector* is unchanged, no value moves more than 18
-   points, and the named narrative cases do not flip.
+1. **Structure.** Written by hand to reproduce the divergence patterns the literature records: industry-relative
+   raters scoring oil majors respectably, disclosure-weighted raters rewarding heavy reporters, absolute risk
+   raters penalising high-exposure sectors.
+2. **Calibration.** `scripts/calibrate.mts` injects deterministic idiosyncratic variance until all six pairwise
+   rank correlations fall inside the 0.38–0.71 range Berg, Kölbel & Rigobon (2022) report. Each rater's view of
+   each *sector* stays unchanged, no value moves more than 18 points, and the named narrative cases do not flip.
 
-The result is a dataset whose correlation **structure** matches the empirical
-literature even though no individual value is a real rating. That makes it
-suitable for demonstrating and testing the analytics, and **unsuitable for any
-statement about a real company**. `npm run calibrate` reproduces the report, and
-CI fails if a hand-edit drifts the structure out of range.
-
-The methods transfer to real data unchanged; the specific numbers do not. To
-swap in real figures, see `/methodology#provenance` in the running app — the
-provider adapter interface means it is a data-source change, not a rewrite.
+The result is a dataset whose correlation **structure** matches the empirical literature even though no
+individual value is a real rating. It is suitable for demonstrating and testing the analytics, and **unsuitable
+for any statement about a real company**. CI fails if a hand-edit drifts the structure out of range. The methods
+transfer to real data unchanged; the specific numbers do not. To swap in real figures, see
+`/methodology#provenance` in the running app: the provider adapter interface makes it a data-source change, not a rewrite.
 
 ---
 
----
-
-## Agent layer
-
-Six agents at the edges of a deterministic core. They fetch, classify, narrate
-and verify; they never do arithmetic. The maths stays in `src/lib/` and is
-handed to them **as tools**, so a model can *call* `computeDivergence("TSLA")`
-but can never *invent* the number.
-
-| # | Agent | Role |
-|---|---|---|
-| 1 | Data Sourcing | Finds published ratings from open sources, with citations |
-| 2 | Verifier | Independently re-fetches each citation and tries to knock it down |
-| 3 | Controversy Analyst | Re-grades the controversy level driving the divergence rules |
-| 4 | Narrative Analyst | Rewrites the drivers as prose. **Zero tools.** |
-| 5 | Methodology Watcher | Detects drift between encoded and published methodologies |
-| 6 | Research Q&A | Answers by calling the engine, with the tool trace shown |
-
-Everything an agent produces is a **proposal**. Nothing reaches the dataset
-without passing the Verifier and then a human.
-
-### Model providers
-
-Copy `.env.local.example` to `.env.local` and add at least one key. All three
-recommended providers are free.
-
-| Provider | Env var | Free tier | Role |
-|---|---|---|---|
-| **Groq** | `GROQ_API_KEY` | Free | **Primary.** Most dependable in testing |
-| **Google Gemini** | `GOOGLE_GENERATIVE_AI_API_KEY` | Free, no card | Second. 1M context, but 503s under load |
-| **Cerebras** | `CEREBRAS_API_KEY` | Free daily allowance | Third. Fastest, but runs out |
-| Ollama | `OLLAMA_MODEL` | Free, local | Optional, offline. Last — too small for tool chains |
-
-Runs walk the chain in order, so a rate limit falls through instead of ending
-the session. Order was set from measured behaviour: Groq answered first time
-while Gemini returned 503 through three retries, and Cerebras returned
-"payment required" once its daily allowance was spent.
-
-Two roles: **reasoning** (tool calling + structured output — agents 1, 2, 3, 5,
-6) and **fast** (plain text, no tools — agent 4 only, so it gets the quickest
-model rather than the strongest).
-
-xAI's Grok is deliberately absent — it needs a card and covers nothing the
-above does not.
-
-```bash
-npm test                 # 104 tests, including the agent tool layer
-npm run check:providers  # live end-to-end run, shows the fallback chain
-```
-
-Without any key: agents 1-3, 5 and 6 return a clear 503; agent 4 falls back to
-the deterministic rules-engine explanation, which is a complete answer rather
-than a stub. Every non-agent feature works regardless.
-
----
-
-## Architecture
-
-```
-src/lib/types.ts        Domain model. Every rating carries its own provenance.
-src/lib/providers.ts    Phase 1 — methodology knowledge base (the intellectual core)
-src/data/companies.ts   30 companies, 6 per sector, with explanation-driving attributes
-src/data/ratings.ts     Seed dataset  ← replace this
-src/lib/normalise.ts    Phase 3 — common scale, uncertainty bands, sector percentiles
-src/lib/divergence.ts   Phase 4 — divergence metrics, Spearman, universe stats
-src/lib/explain.ts      Phase 5 — deterministic rules engine
-src/lib/validate.ts     Ingestion validator
-```
-
-Data flows one way: `providers + data → normalise → divergence → explain → UI`.
-Nothing downstream writes back.
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    D[("data<br/>companies + ratings")] --> N[normalise.ts]
+    D[("src/data<br/>companies + ratings")] --> N[normalise.ts]
     P["providers.ts<br/>methodology KB"] --> N
     N --> DV[divergence.ts]
+    DV --> ST["statistics.ts · screening.ts<br/>predictors.ts"]
     DV --> EX["explain.ts<br/>rules engine"]
-    EX --> UI["Next.js App Router UI<br/>+ /api/export (PDF·CSV·JSON)"]
+    ST --> UI["Next.js App Router UI<br/>+ /api/export (PDF·CSV·JSON)"]
+    EX --> UI
 
-    subgraph CORE["Deterministic core · src/lib (does all the maths)"]
+    D -- "npm run export:data" --> J[("data/*.json · ratings.csv<br/>reference.json")]
+    J --> PY["python/esg_divergence<br/>pandas · matplotlib · rich"]
+    PY --> FIG["figures · notebook · CLI"]
+    J -. "parity tests" .- PY
+
+    subgraph CORE["Deterministic core · src/lib (all the maths)"]
         P
         N
         DV
+        ST
         EX
     end
 
@@ -213,27 +254,38 @@ flowchart LR
     AGENTS -. "call the core as tools" .-> CORE
     AGENTS -. "proposals → human review" .-> UI
 
-    classDef core fill:#1f4e5f,stroke:#8fd3e8,color:#fff;
+    classDef core fill:#14532d,stroke:#86efac,color:#fff;
     classDef agent fill:#5a3d2b,stroke:#e0b088,color:#fff;
-    class P,N,DV,EX core;
+    classDef py fill:#1e3a8a,stroke:#93c5fd,color:#fff;
+    class P,N,DV,ST,EX core;
     class O,SRC,VER,CON,NAR,WCH,QNA agent;
+    class PY,FIG py;
+```
+
+Data flows one way: `providers + data → normalise → divergence → statistics / explain → UI`. Nothing downstream writes back.
+
+```text
+src/lib/                TypeScript analytical core (normalise · divergence · statistics · screening · predictors · explain)
+src/agents/             six-agent layer; calls the core as tools
+src/app/                Next.js App Router pages + /api routes
+src/data/               30 companies, 4 raters, calibrated seed dataset
+data/                   exported JSON/CSV + reference.json (TS results the Python port must match)
+python/esg_divergence/  Python research engine (same maths, pandas/matplotlib on top)
+python/tests/           pytest: unit tests + cross-language parity
+python/notebooks/       executed research walkthrough
+python/tools/           screenshot + banner generators (Playwright)
+scripts/                calibration, live provider check, data export
 ```
 
 ### Three decisions that carry the credibility
 
-1. **Sustainalytics is inverted, not translated.** Its raw figure is unmanaged
-   risk — lower is better. Mapped as `100 − (risk ÷ 50) × 100`. The practical
-   maximum is 50, not the theoretical 100, because essentially no rated company
-   exceeds 50 and normalising against 100 would squash every real company into
-   the top half of the axis.
-
-2. **MSCI letters are intervals, not points.** "AA" spans 7.143–8.570 on the
-   underlying 0–10 score, so every MSCI value carries an uncertainty band equal
-   to its bucket width, and the charts render it. Treating a letter grade as a
-   point estimate manufactures precision that does not exist.
-
-3. **Sector percentile is the honest view.** Comparing an industry-relative
-   rating to an absolute one on a raw axis is apples-to-oranges by construction.
+1. **Sustainalytics is inverted, not translated.** Its raw figure is unmanaged risk: lower is better. It is
+   mapped as `100 − (risk ÷ 50) × 100`. The practical maximum is 50, not the theoretical 100, because essentially
+   no rated company exceeds 50, and normalising against 100 would squash every real company into the top half of the axis.
+2. **MSCI letters are intervals, not points.** "AA" spans 7.143–8.570 on the underlying 0–10 score, so every MSCI
+   value carries an uncertainty band equal to its bucket width, and the charts render it.
+3. **Sector percentile is the honest view.** Comparing an industry-relative rating to an absolute one on a raw
+   axis is apples-to-oranges by construction.
 
 ### Divergence score
 
@@ -241,129 +293,110 @@ flowchart LR
 score = max(normalisedRange, percentileRange)
 ```
 
-The larger of the two, not an average. An earlier version averaged them and
-produced a documented false negative: Meta is ranked last in technology by all
-four providers (rank spread 0) while sitting 30 points apart on level — the
-average scored that 15 and called it "Aligned". Each company page also reports
-the **disagreement type** (level / rank / both), which is more useful than the
-single number.
+The score takes the larger of the two, not an average. An earlier version averaged them and produced a
+documented false negative: Meta is ranked last in technology by all four providers (rank spread 0) while
+sitting 30 points apart on level. The average scored that 15 and called it "Aligned". Each company page also
+reports the **disagreement type** (level / rank / both).
 
 Bands: `0–15 Aligned · 16–35 Mild · 36–60 Significant · 61+ Extreme`
 
 ### Explanation engine
 
-Deterministic. No model, no API call, no randomness. It diffs two providers'
-structured methodology profiles, checks each difference against the company's own
-attributes, and emits drivers attributed to **scope / measurement / weight** after
-Berg, Kölbel & Rigobon (2022), *Aggregate Confusion: The Divergence of ESG
-Ratings*, Review of Finance 26(6).
+Deterministic: no model, no API call, no randomness. It diffs two providers' structured methodology profiles,
+checks each difference against the company's own attributes, and emits drivers attributed to
+**scope / measurement / weight** after Berg, Kölbel & Rigobon (2022), *Aggregate Confusion: The Divergence of
+ESG Ratings*, Review of Finance 26(6). The optional narrative layer may rephrase drivers but never compute a
+number or introduce a fact.
 
-The roadmap adds an optional Claude narrative layer on top, constrained so it may
-rephrase drivers but never compute a number or introduce a fact. Keeping
-computation and narration strictly separated is what makes the output auditable.
+## 🤖 Agent layer
 
----
+Six agents sit at the edges of the deterministic core. They fetch, classify, narrate and verify; they never do
+arithmetic. The maths is handed to them **as tools**, so a model can *call* `computeDivergence("TSLA")` but can
+never *invent* the number.
 
-## Export
+| # | Agent | Role |
+|---|---|---|
+| 1 | Data Sourcing | Finds published ratings from open sources, with citations |
+| 2 | Verifier | Independently re-fetches each citation and tries to knock it down |
+| 3 | Controversy Analyst | Re-grades the controversy level driving the divergence rules |
+| 4 | Narrative Analyst | Rewrites the drivers as prose. **Zero tools.** |
+| 5 | Methodology Watcher | Detects drift between encoded and published methodologies |
+| 6 | Research Q&A | Answers by calling the engine, with the tool trace shown |
 
-Every screen has an **Export** menu, and individual cards have their own download
-buttons so a single dataset can be pulled without taking everything.
+Everything an agent produces is a **proposal**. Nothing reaches the dataset without passing the Verifier and then a human.
+
+<details>
+<summary><b>Model providers</b>: free tiers and fallback chain</summary>
+<br/>
+
+Copy `.env.local.example` to `.env.local` and add at least one key. All three recommended providers are free.
+
+| Provider | Env var | Free tier | Role |
+|---|---|---|---|
+| **Groq** | `GROQ_API_KEY` | Free | **Primary.** Most dependable in testing |
+| **Google Gemini** | `GOOGLE_GENERATIVE_AI_API_KEY` | Free, no card | Second. 1M context, but 503s under load |
+| **Cerebras** | `CEREBRAS_API_KEY` | Free daily allowance | Third. Fastest, but runs out |
+| Ollama | `OLLAMA_MODEL` | Free, local | Optional, offline. Last; too small for tool chains |
+
+Runs walk the chain in order, so a rate limit falls through instead of ending the session. There are two roles:
+**reasoning** (tool calling + structured output, used by agents 1, 2, 3, 5 and 6) and **fast** (plain text, no
+tools, used by agent 4 only).
+
+Without any key, agents 1–3, 5 and 6 return a clear 503, and agent 4 falls back to the deterministic rules-engine
+explanation. Every non-agent feature works regardless. `npm run check:providers` runs a live end-to-end check.
+
+</details>
+
+## 📤 Export
+
+Every screen has an **Export** menu, and individual cards have their own download buttons.
 
 | Format | Contents |
 |---|---|
-| PDF | `window.print()` against the `@media print` block in `globals.css` — no PDF library. `/report` is the print-optimised layout. |
-| CSV | Divergence metrics · normalised scores · raw ratings · divergence drivers · methodology profiles · correlation matrix |
+| PDF | `window.print()` against the `@media print` block; `/report` is the print-optimised layout |
+| CSV | Divergence metrics · normalised scores · raw ratings · drivers · methodology profiles · correlation matrix |
 | JSON | The complete structured dataset |
 
-Files are generated server-side (`/api/export`) so the serialisers and the full
-dataset stay out of the client bundle. On a company page the exports scope to
-that company automatically.
+**Every export carries its provenance in the file header**: source, generation date, the divergence formula and
+the synthetic-data warning. CSV writing neutralises leading `=`, `+`, `-` and `@` so values are never executed as
+formulas in Excel or Sheets.
 
-**Every export carries its provenance in the file header** — source, generation
-date, the divergence formula, and the illustrative-data warning. A CSV that
-escapes into a spreadsheet loses all of its on-screen context, so the context has
-to travel with it. CSV writing also neutralises leading `=`, `+`, `-` and `@` so
-values are not executed as formulas by Excel or Sheets.
+## 🧪 Testing
 
-## Design
+| Suite | Command | What it guards |
+|---|---|---|
+| TypeScript · 104 tests | `npm run coverage` | normalisation, divergence, screening, statistics, predictors, agent tool layer (76% statements on the core, 70% threshold) |
+| Python · 42 tests | `cd python && pytest` | the same maths, plus **exact parity with the TypeScript results** |
+| Calibration | `npm run calibrate` | the dataset's correlation structure stays inside the published range |
 
-Light mode only. Three levels of nesting — soft grey backdrop → rounded app shell
-→ glass cards — which is what produces the depth; a flat page with cards on it
-does not read the same way. Glass surfaces need something behind them to blur, so
-the backdrop carries soft gradient blooms.
+Several tests are explicit regression guards for bugs found during development: the averaged divergence score
+that called a 30-point gap "Aligned", the turnover figure that exceeded 100%, the null model that compared unlike
+statistics, and the group comparison that pitted n=1 against n=18. CI runs lint, typecheck, both test suites,
+calibration and the production build on every push.
 
-The divergence ramp (teal → amber → orange → rose) deliberately avoids red/green:
-in a finance UI those already mean "down" and "up". It escalates in both hue and
-luminance, so severity survives greyscale and colour-vision deficiency.
+## ⚖️ Known limitations
 
-Type: Space Grotesk (display) · Inter (body) · JetBrains Mono (figures).
+These are stated plainly: a tool about transparency that hid its own weak points would defeat its purpose.
 
-## Testing
+- **The ratings are synthetic.** Calibrated to the published correlation structure, but no individual value is a real vendor score.
+- **n = 30.** Group comparisons are underpowered by construction, so effect sizes and intervals are reported rather than regression coefficients.
+- **Equal weighting in the screens.** Turnover applies market-cap weighting, but portfolio construction assumes equal position sizes.
+- **The transaction-cost estimate is order-of-magnitude.** 10–25bp one-way is a reasonable large-cap assumption, not a cost model.
+- **Sector percentiles are coarse.** Six companies per sector gives a 16.7-point step; the divergence rank component uses the 30-company universe instead.
+- **Causation is not established.** The engine identifies which methodology differences are *capable* of producing a gap, not which one did.
+- **Provider methodologies change.** The encoded profiles are a snapshot; the Methodology Watcher exists to catch drift.
 
-```bash
-npm test           # 104 tests across 6 files
-npm run coverage   # 76% statements on the analytical core, 70% threshold
-```
+## 🧰 Stack
 
-Unit tests cover normalisation, divergence, screening, statistics, predictors
-and the agent tool layer. UI is verified by the production build and browser
-checks rather than tests that would mostly assert their own markup back.
+**App:** Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · hand-rolled SVG charts (off-the-shelf
+components will not render uncertainty bands) · Vercel AI SDK. All 30 company pages prerender statically.
 
-Several tests are explicit regression guards for bugs found during development
-and documented in the code: the averaged divergence score that called a 30-point
-gap "Aligned", the tool trace that read only the last agent step, the turnover
-figure that exceeded 100%, the null model that compared unlike statistics, and
-the group comparison that pitted n=1 against n=18.
+**Research engine:** Python 3.11+ · pandas · matplotlib · rich · pytest · Jupyter · Playwright.
 
-CI (`.github/workflows/ci.yml`) runs typecheck, lint, tests with coverage, the
-data calibration check and the build on every push and pull request. The
-calibration step fails the build if a hand-edit to the seed data drifts the
-correlation structure outside the published range — that structure is what makes
-the synthetic dataset defensible, and it should not be possible to break it
-silently.
+## ⭐ Support
 
-## Stack
+If this helped you think about ESG data more critically, **a star helps other people find it.**
 
-Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · zero chart
-dependencies (hand-rolled SVG, because off-the-shelf chart components will not
-render the uncertainty bands) · zero UI dependencies.
+[![Star History Chart](https://api.star-history.com/svg?repos=ANNYM25/esg-ratings-divergence&type=Date)](https://star-history.com/#ANNYM25/esg-ratings-divergence&Date)
 
-All 30 company pages prerender statically. `Shell` deliberately does not call
-`cookies()` — doing so would opt every page out of static generation for the sake
-of a display name, so `UserMenu` reads the session in the browser instead.
-
-Sign-in and sign-out use full navigations rather than `router.push`. The guard
-lives in `src/proxy.ts` (Next 16's renamed middleware convention), and a
-client-side App Router navigation does not re-evaluate it against a cookie that
-was only just written.
-
----
-
-## Known limitations
-
-Stated plainly, because a tool about transparency that hides its own weak points
-would be self-defeating.
-
-- **The ratings are synthetic.** Calibrated to the published correlation
-  structure, but no individual value is a real vendor score. The method
-  transfers; the numbers do not.
-- **n = 30.** Group comparisons in the research section are underpowered by
-  construction. Effect sizes and intervals are reported rather than p-values
-  from a fitted model precisely because a four-predictor regression on thirty
-  observations would produce coefficients nobody should believe.
-- **Equal weighting in the screens.** The turnover figures apply market-cap
-  weighting, but portfolio construction assumes equal position sizing.
-- **The transaction-cost estimate is order-of-magnitude.** 10–25bp one-way is a
-  reasonable large-cap assumption, not a transaction-cost model. Real cost
-  depends on liquidity, urgency and implementation.
-- **Sector percentiles are coarse.** Six companies per sector gives a 16.7-point
-  step. The divergence rank component uses the 30-company universe instead
-  (3.3-point step), but the sector view retains the limitation.
-- **Causation is not established.** The engine identifies which methodology
-  differences are *capable* of producing an observed gap. Without vendors'
-  indicator-level data it cannot prove which one did.
-- **Provider methodologies change.** The encoded profiles are a snapshot; the
-  Methodology Watcher agent exists to catch drift, but it is not a substitute
-  for periodic manual review.
-
-**Research and education tool. Not investment advice.**
+<div align="center"><sub>Built by <a href="https://github.com/ANNYM25">Anny Mondal</a> · MIT licensed · <b>Research and education tool. Not investment advice.</b></sub></div>
