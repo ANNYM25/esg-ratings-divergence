@@ -8,6 +8,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Manual full-history scan, e.g. after a history rewrite (a force-push makes the
+  # action ask for the root commit's parent, which does not exist).
+  workflow_dispatch:
 
 permissions:
   contents: read
