@@ -149,7 +149,7 @@ export const PROVIDERS: ProviderInfo[] = [
     signupUrl: "https://vercel.com/docs/ai-gateway",
     freeTier: "Paid, with starting credit",
     bestFor:
-      "Optional. Routes to frontier models (Claude, GPT) through one key. Used first when present, since it is the strongest option available.",
+      "Optional. Routes to frontier models through one key. Used first when present, since it is the strongest option available.",
     available: Boolean(env("AI_GATEWAY_API_KEY") ?? env("VERCEL_OIDC_TOKEN")),
     models: {
       reasoning: "anthropic/claude-sonnet-5",

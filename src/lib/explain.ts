@@ -18,7 +18,7 @@
  * total divergence, scope 38%, and weight 6%. The attribution block this
  * engine returns is directly comparable to that decomposition.
  *
- * Tier 2 (the Claude narrative layer, in app/api/explain) consumes these
+ * Tier 2 (the LLM narrative layer, in app/api/explain) consumes these
  * drivers verbatim. It is permitted to rephrase them. It is never permitted to
  * compute a number or introduce a fact that is not present here.
  */

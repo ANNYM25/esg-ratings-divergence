@@ -212,8 +212,8 @@ export default function MethodologyPage() {
               page.
             </p>
             <p className="mt-3 text-[13px] leading-relaxed text-muted">
-              The roadmap adds an optional narrative layer on top, where Claude
-              rephrases the structured drivers into analyst prose. That layer is
+              The roadmap adds an optional narrative layer on top, where a language
+              model rephrases the structured drivers into analyst prose. That layer is
               constrained by design: it may rephrase drivers, and it may never
               compute a number or introduce a fact not present in the rules
               output. Keeping computation and narration strictly separated is
